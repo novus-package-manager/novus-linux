@@ -7,3 +7,7 @@ edition = "2018"
 
 [dependencies]
 utils = {path="../utils"}
+colored = "2.0.0"
+anyhow = "1.0.42"
+async-trait = "0.1.50"
+tokio = { version = "1.5.0", features = ["full"] }

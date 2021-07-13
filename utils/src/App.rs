@@ -36,4 +36,9 @@ impl App {
             novus_dir,
         }
     }
+    pub fn has_flag(&self, flags: &[&str]) -> bool {
+        self.flags
+            .iter()
+            .any(|flag| flags.iter().any(|search_flag| flag == search_flag))
+    }
 }
